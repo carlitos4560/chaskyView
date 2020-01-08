@@ -1,0 +1,13 @@
+<form [formGroup]="formLogin">
+  Identificador: <input
+  [class.is-invalid]="formLogin.get('name').touched && formLogin.get('name').invalid "
+  formControlName="name"
+  value="">
+  Contraseña<input
+  [class.is-invalid]="formLogin.get('password').touched && formLogin.get('password').invalid "
+  formControlName="password" type="password" value="">
+  <button class='btn btn-primary' (click)="login()">Iniciar</button>
+  <button class='btn btn-primary' (click)="crearUser()">Crear usuario</button>
+
+  <!-- <a><input type="button" value="" (click)="login()"></a> -->
+</form>
