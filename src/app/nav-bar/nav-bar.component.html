@@ -1,1 +1,17 @@
-<p>nav-bar works!</p>
+<div class="toolbar main" role="banner">
+  <li>
+    <a routerLink="/login" class="spacer"> Login </a>
+  </li>
+  <li>
+    <a routerLink="/documents" class="spacer"> Documents  </a> <br>
+  </li>
+  <li>
+    <a routerLink="/documentuser" class="spacer"> Document User  </a>
+  </li>
+  <li>
+    <a routerLink="/createDocument" class="spacer"> Create Document   </a>
+  </li>
+  <li>
+    <a routerLink="/login" class="spacer" (click)='cerrar()'> Cerrar Sesion </a>
+  </li>
+</div>

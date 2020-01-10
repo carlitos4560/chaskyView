@@ -1,11 +1,13 @@
-<form [formGroup]="formCreateUser">
-  rol: <input formControlName="type_user" type="text" >
-  Nombres: <input formControlName="name" type="text" >
-  Apellidos:<input formControlName="last_name" type="text" >
-  Correo: <input formControlName="email" type="text" >
-  Fecha Nacimiento: <input formControlName="fechaNacimiento" >
-  Identificador: <input formControlName="userName"  >
-  Contraseña<input formControlName="password" >
-  <button class='btn btn-primary' (click)="createUser()">Iniciar</button>
-  <!-- <a><input type="button" value="" (click)="login()"></a> -->
-</form>
+<div class="centered">
+  <form class="userRegist" [formGroup]="formCreateUser">
+    rol: <input class="formLabel" formControlName="type_user" type="text" >
+    Nombres: <input class="formLabel" formControlName="name" type="text" >
+    Apellidos:<input class="formLabel" formControlName="last_name" type="text" >
+    Correo: <input class="formLabel" formControlName="email" type="text" >
+    Fecha Nacimiento: <input class="formLabel" formControlName="fechaNacimiento" >
+    Identificador: <input class="formLabel" formControlName="userName"  >
+    Contraseña<input class="formLabel" formControlName="password" >
+    <button style="position: center;" class='btn btn-primary' (click)="createUser()">Iniciar</button>
+    <!-- <a><input type="button" value="" (click)="login()"></a> -->
+  </form>
+</div>

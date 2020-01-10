@@ -11,5 +11,9 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  cerrar() {
+    localStorage.clear();
+    alert("sesion finalizada");
+    console.log("sesion finalizada");
+  }
 }

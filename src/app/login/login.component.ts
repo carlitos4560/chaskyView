@@ -29,6 +29,9 @@ export class LoginComponent implements OnInit {
         alert(" los datos del usuario no corresponden");
         console.log(date);
       } else {
+        localStorage.setItem("token", date.token);
+        localStorage.setItem("codigo", date.user);
+        localStorage.setItem("rol", date.rol);
         this.router.navigateByUrl('/documents');
       }
     });

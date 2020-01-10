@@ -1,5 +1,7 @@
-<div class='document'>
-  <li *ngFor='let document of documents'> {{ document.titulo }}
-    <button> Ver Mas</button>
-  </li>
+<div class='centered'>
+  <ol class='document'>
+    <li style="margin:10px; padding: 5px;" *ngFor='let document of documents'> {{ document.titulo }}
+      <button class="button"> Download</button>
+    </li>
+  </ol>
 </div>

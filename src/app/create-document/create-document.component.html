@@ -1,0 +1,13 @@
+<div class="centered main" style="margin: 30px;">
+  <form [formGroup]="formDocumentNew" class="order">
+    titulo: <input formControlName="titulo" value="">
+
+    <div class="label">
+      Descripcion: <input formControlName="description" type="text" value="">
+    </div>
+    <div class="centered-row">
+      <button class='button btn btn-primary' (click)="crearDocument()">Crear</button>
+    </div>
+    <!-- <a><input type="button" value="" (click)="login()"></a> -->
+  </form>
+</div>

@@ -1,13 +1,19 @@
-<form [formGroup]="formLogin">
-  Identificador: <input
-  [class.is-invalid]="formLogin.get('name').touched && formLogin.get('name').invalid "
-  formControlName="name"
-  value="">
-  Contraseña<input
-  [class.is-invalid]="formLogin.get('password').touched && formLogin.get('password').invalid "
-  formControlName="password" type="password" value="">
-  <button class='btn btn-primary' (click)="login()">Iniciar</button>
-  <button class='btn btn-primary' (click)="crearUser()">Crear usuario</button>
+<div class="centered main" style="margin: 30px;">
+  <form [formGroup]="formLogin" class="order">
+    Identificador: <input
+    [class.is-invalid]="formLogin.get('name').touched && formLogin.get('name').invalid "
+    formControlName="name"
+    value="">
 
-  <!-- <a><input type="button" value="" (click)="login()"></a> -->
-</form>
+    <div class="label">
+      Contraseña: <input
+      [class.is-invalid]="formLogin.get('password').touched && formLogin.get('password').invalid "
+      formControlName="password" type="password" value="">
+    </div>
+    <div class="centered-row">
+      <button class='button btn btn-primary' (click)="login()">Iniciar</button>
+      <button class='button btn btn-primary' (click)="crearUser()">Crear usuario</button>
+    </div>
+    <!-- <a><input type="button" value="" (click)="login()"></a> -->
+  </form>
+</div>

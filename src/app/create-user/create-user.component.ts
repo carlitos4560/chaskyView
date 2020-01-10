@@ -20,7 +20,6 @@ export class CreateUserComponent implements OnInit {
       fechaNacimiento : new FormControl('', [Validators.required]),
       userName : new FormControl('', [Validators.required]),
       password : new FormControl('', [Validators.required])
-      // password : new FormControl('', [Validators.required, Validators.pattern("expresio regular ")])
     });
   }
 
@@ -28,6 +27,10 @@ export class CreateUserComponent implements OnInit {
   }
 
   createUser() {
+    // console.log(this.formCreateUser);
+    this.userServis.postCrearUser(this.formCreateUser.value).subscribe(data => {
+      console.log(data);
+    });
     this.router.navigateByUrl('/documents');
     // console.log(this.formBuilde );
   }

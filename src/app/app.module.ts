@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoginService } from './login.service';
 import { DocumentsService } from './documents.service';
+import { DocumentUserComponent } from './document-user/document-user.component';
+import { CreateDocumentComponent } from './create-document/create-document.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DocumentsService } from './documents.service';
     NavBarComponent,
     CreateUserComponent,
     LoginComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    DocumentUserComponent,
+    CreateDocumentComponent
   ],
   imports: [
     BrowserModule,
